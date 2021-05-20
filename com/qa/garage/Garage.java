@@ -23,5 +23,14 @@ public class Garage {
 		}
 	}
 	
+	public void deleteVehicle(Object vehicle) {
+		for(int i = 0; i < myGarage.size(); i++) {
+			if (myGarage.get(i).equals(vehicle)) {
+				myGarage.remove(i);
+				System.out.println("Deleted!");
+			}
+		}
+	}
+	
 	
 }

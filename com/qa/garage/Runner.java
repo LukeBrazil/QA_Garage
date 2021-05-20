@@ -13,7 +13,9 @@ public class Runner {
 		myGarage1.addVehicle(car1);
 		myGarage1.addVehicle(boat1);
 		myGarage1.addVehicle(motorcycle1);
+		myGarage1.deleteVehicle(motorcycle1);
 		myGarage1.showGarage();
+		
 	}
 
 }
