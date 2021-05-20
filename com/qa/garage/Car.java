@@ -2,8 +2,8 @@ package com.qa.garage;
 
 public class Car extends Vehicle implements DrivingBehavior{
 
-	public Car(String manufacturer, String model, int year) {
-		super(manufacturer, model, year);
+	public Car(String manufacturer, String model, int year, int condition) {
+		super(manufacturer, model, year, condition);
 		// TODO Auto-generated constructor stub
 	}
 
@@ -23,8 +23,16 @@ public class Car extends Vehicle implements DrivingBehavior{
 	public String toString() {
 		String s = "Car Model: " + getModel() + "\n" 
 				+ "Car Manufacturer: " + getManufacturer() + "\n"
-				+ "Car Year: " + getYear();
+				+ "Car Year: " + getYear() + "\n"
+				+ "Condition: " + getCondition();
 		return s;
+	}
+
+
+	@Override
+	public int calculateBill() {
+		// TODO Auto-generated method stub
+		return this.getCondition() * 8;
 	}
 	
 	
