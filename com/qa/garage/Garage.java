@@ -12,13 +12,14 @@ public class Garage {
 	
 	List<Object> myGarage = new ArrayList<Object>();
 	
-	public void addCar(Object car) {
-		myGarage.add(car);
+	public void addVehicle(Object vehicle) {
+		myGarage.add(vehicle);
+		System.out.println("Added!");
 	}
 	
 	public void showGarage() {
 		for(int i = 0; i < myGarage.size(); i++) {
-			System.out.println(myGarage.get(i));
+			System.out.println(myGarage.get(i).toString());
 		}
 	}
 	
