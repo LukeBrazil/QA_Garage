@@ -23,8 +23,11 @@ public class Garage {
 		}
 	}
 	
-	public void showRepairBills(Object s) {
-		System.out.println(s.calculateBill());
+	public void showRepairBills() {
+		for(int i = 0; i < myGarage.size(); i++) {
+			Object myObj = myGarage.get(i);
+			System.out.println(myObj);
+		}
 	}
 	
 	public void deleteVehicle(Object vehicle) {

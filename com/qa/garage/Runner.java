@@ -15,11 +15,11 @@ public class Runner {
 		myGarage1.addVehicle(boat1);
 		myGarage1.addVehicle(motorcycle1);
 //		myGarage1.deleteVehicle(motorcycle1);
-		myGarage1.showGarage();
-		myGarage1.clearGarage();
+		//myGarage1.showGarage();
+		// myGarage1.clearGarage();
 		System.out.println(">>>>>>");
-		myGarage1.showGarage();
-		
+		//myGarage1.showGarage();
+		myGarage1.showRepairBills();
 	}
 
 }

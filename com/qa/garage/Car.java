@@ -29,7 +29,7 @@ public class Car extends Vehicle implements DrivingBehavior{
 	}
 
 
-	@Override
+	
 	public int calculateBill() {
 		// TODO Auto-generated method stub
 		return this.getCondition() * 8;

@@ -28,7 +28,7 @@ public class Boat extends Vehicle implements DrivingBehavior{
 		return s;
 	}
 
-	@Override
+	
 	public int calculateBill() {
 		// TODO Auto-generated method stub
 		return this.getCondition() * 15;
