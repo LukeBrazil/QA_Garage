@@ -18,6 +18,14 @@ public class Car extends Vehicle implements DrivingBehavior{
 		// TODO Auto-generated method stub
 		System.out.println("Car is brakeing...");
 	}
+
+	@Override
+	public String toString() {
+		String s = "Car Model: " + getModel() + "\n" 
+				+ "Car Manufacturer: " + getManufacturer() + "\n"
+				+ "Car Year: " + getYear();
+		return s;
+	}
 	
 	
 

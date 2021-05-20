@@ -18,5 +18,13 @@ public class Boat extends Vehicle implements DrivingBehavior{
 		// TODO Auto-generated method stub
 		System.out.println("Boat is slowing...");
 	}
+	
+	@Override
+	public String toString() {
+		String s = "Boat Model: " + getModel() + "\n" 
+				+ "Boat Manufacturer: " + getManufacturer() + "\n"
+				+ "Boat Year: " + getYear();
+		return s;
+	}
 
 }

@@ -18,5 +18,13 @@ public class Motorcycle extends Vehicle implements DrivingBehavior{
 		// TODO Auto-generated method stub
 		System.out.println("Motorcycle is brakeing...");
 	}
+	
+	@Override
+	public String toString() {
+		String s = "MotorCycle Model: " + getModel() + "\n" 
+				+ "MotorCycle Manufacturer: " + getManufacturer() + "\n"
+				+ "MotorCycle Year: " + getYear();
+		return s;
+	}
 
 }

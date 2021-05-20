@@ -11,6 +11,8 @@ public class Runner {
 		Garage myGarage1 = new Garage("Garage1");
 		
 		myGarage1.addVehicle(car1);
+		myGarage1.addVehicle(boat1);
+		myGarage1.addVehicle(motorcycle1);
 		myGarage1.showGarage();
 	}
 
