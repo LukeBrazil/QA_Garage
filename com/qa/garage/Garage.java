@@ -17,18 +17,14 @@ public class Garage {
 	}
 	
 	public void showGarage() {
+		System.out.println("Garage Inventory: \n");
 		for(int i = 0; i < myGarage.size(); i++) {
 			System.out.println(myGarage.get(i).toString());
 			System.out.println(" ");
 		}
 	}
 	
-	public void showRepairBills() {
-		for(int i = 0; i < myGarage.size(); i++) {
-			Object myObj = myGarage.get(i);
-			System.out.println(myObj);
-		}
-	}
+
 	
 	public void deleteVehicle(Object vehicle) {
 		for(int i = 0; i < myGarage.size(); i++) {
@@ -36,6 +32,18 @@ public class Garage {
 				myGarage.remove(i);
 			}
 		}
+	}
+	
+	public void showRepairBills() {
+		int totalBill = 0;
+		for(int i = 0; i < myGarage.size(); i++) {
+			Vehicle e = (Vehicle) myGarage.get(i);
+			int bill = e.calculateBill();
+			String response = "Vehicle: " + e.getManufacturer() + " " + e.getModel() + " repair bill is: " + e.calculateBill();
+			totalBill += bill;
+			System.out.println(response);
+		}
+		System.out.println("Total Bill for all vehicles: $" + totalBill);
 	}
 	
 	public void clearGarage() {
